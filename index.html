@@ -15,16 +15,18 @@
 <link rel="preload" as="image" href="assets/screen2.avif" type="image/avif" />
 <title>Roleplay Anime IA</title>
 
-<!-- =======================================================
-     ANALYTICS / CONVERSION PIXEL — insert here (e.g. Reddit Pixel)
-     The INSTALL button handler in the body script exposes a hook:
-     window.__onInstallClick() is called on button tap — fire your
-     conversion event inside there (see bottom of file).
-     ======================================================= -->
 <script>
   var INSTALL_URL = 'https://apps.apple.com/ua/app/iskra-ai-roleplay-characters/id6761598951';
 </script>
-<!-- ======================================================= -->
+
+<!-- Reddit Pixel -->
+<script>
+!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js";t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
+rdt('init','a2_ivtf4cnsqrdy',{optOut:false,useDecimalCurrencyValues:true});
+rdt('track','PageVisit');
+window.__onInstallClick = function(){ try { rdt('track','Lead'); } catch(e){} };
+</script>
+<!-- End Reddit Pixel -->
 
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
